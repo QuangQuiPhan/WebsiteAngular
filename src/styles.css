@@ -1,1 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary : rgba(57, 102, 226, 1);
+    --green: rgba(45, 230, 76, 1);
+    --danger: rgba(214, 55, 55, 1);
+    --warning: rgba(243, 220, 10, 1);
+    --hoverprimary : rgba(57, 102, 226, 0.75);
+    --hovergreen: rgba(45, 230, 76, 0.75);
+    --hoverdanger: rgba(214, 55, 55, 0.75);
+    --hoverwarning: rgba(243, 220, 10, 0.75);
+    --text-color: #212529;
+    --discount: #ff0000;
+    --background: #ff8800bd;
+    --navbackground: #ff8800;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.btn--primary{
+    background: var(--primary);
+    color: var(--white); 
+}
+
+.btn--primary:hover{
+    background: var(--hoverprimary);
+    color: var(--white); 
+}
+
+.btn--green{
+    background: var(--green);
+    color: var(--white); 
+}
+
+.btn--green:hover{
+    background: var(--hovergreen);
+    color: var(--white); 
+}
+
+.btn--danger{
+    background: var(--danger);
+    color: var(--white); 
+}
+
+.btn--danger:hover{
+    background: var(--hoverdanger);
+    color: var(--white); 
+}
+
+.btn--warning{
+    background: var(--warning);
+    color: var(--white); 
+}
+
+.btn--warning:hover{
+    background: var(--hoverwarning);
+    color: var(--white); 
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    padding: 10px 50px;
+}
+
+.col-md-3{
+    width: 25%;
+    padding: 15px;
+}

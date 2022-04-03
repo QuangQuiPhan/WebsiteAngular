@@ -1,0 +1,52 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.nav--background{
+    background: var(--background);
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    justify-content:space-around;
+}
+
+.navbar__item{
+    padding: 0.5rem 1.2rem;
+}
+
+.navbar__item__link{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    line-height: 1.832;
+    color: var(--white);
+}
+
+.navbar__item__link:hover {
+    background: rgba(var(--background), 0.5);
+    color: var(--danger);
+    animation: 1s linear identifier;
+}
+
+@keyframes identifier {
+    from{
+        color: var(--white);
+        font-weight: 500;
+        opacity: 0.5;
+    }to{
+        color: var(--danger);
+        font-weight: 800;
+        opacity: 1;
+    }
+}
+
+mat-icon{
+    font-size:2rem;
+}

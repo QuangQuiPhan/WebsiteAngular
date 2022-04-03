@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    background-color: var(--background);
+    padding: 1.2rem 0rem;
+}
+
+.footer__info{
+    padding: 1.5rem 3rem;
+}
+
+.footer__info p{
+    font-size: 1.3rem;
+}

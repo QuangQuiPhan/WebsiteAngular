@@ -20,7 +20,12 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 62.5%;
+    /* 
+        62.5% = 10px
+        1rem = 10px;
+        1.6rem = 16px;
+    */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
 }
@@ -28,11 +33,28 @@ html{
 a {
     text-decoration: none;
     color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 1.9rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+p{
+    font-size: 1.6rem;
 }
 
 .btn {
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -80,13 +102,49 @@ a {
 .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .container{
-    padding: 10px 50px;
+    padding: 1rem 5rem;
 }
 
-.col-md-3{
+.col__3{
     width: 25%;
-    padding: 15px;
+}
+
+.col__4{
+    width: 33.33%;
+}
+
+.col__5{
+    width: 41.66%;
+}
+
+.col__6{
+    width: 50%;
+}
+
+.col__7{
+    width: 58.33%;
+}
+
+.col__8{
+    width: 66.66%;
+}
+
+.col__9{
+    width: 75%;
+}
+
+.col__10{
+    width: 83.33%;
+}
+
+.col__11{
+    width: 91.66%;
+}
+
+.col__12{
+    width: 100%;
 }

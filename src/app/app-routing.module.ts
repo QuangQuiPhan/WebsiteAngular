@@ -4,6 +4,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 
@@ -31,6 +32,14 @@ const routes: Routes = [
 	{
 		path: 'DangKy',
 		component: SignupComponent
+	},
+	{
+		path: 'ChiTiet',
+		component: ProductDetailComponent
+	},
+	{
+		path: 'ChiTiet',
+		redirectTo: '/ChiTiet'
 	}
 ];
 

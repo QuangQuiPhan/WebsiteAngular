@@ -1,0 +1,51 @@
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    background-color: var(--background);
+    box-shadow: .5rem .5rem 0 0 orangered
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin: .4rem 0;
+}
+
+.form__group__control{
+    padding: 0.6rem;
+    border: .2rem solid #ced4da;
+    border-radius: .4rem;
+    font-weight: bold;
+}
+
+.form__group__forgot{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.form__group__signup{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+span{
+    color: var(--primary);
+}
+
+.form > h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+    font-size: 2rem;
+    color: var(--white);
+}

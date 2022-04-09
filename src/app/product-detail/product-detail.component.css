@@ -1,0 +1,38 @@
+.img img{
+    width: 100%;
+}
+
+.content{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__title{
+
+}
+
+.content__description{
+
+}
+
+.content__price, .content__quality, .content__addcart{
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.content__addcart{
+    justify-content: space-evenly;
+}
+
+.content__quality input{
+    padding: .8rem;
+    border: .1rem solid var(--border);
+    border-radius: .4rem;
+    width: 5.5rem;
+    margin: 0 .5rem;
+    text-align: center;
+    font-weight: bold;
+}

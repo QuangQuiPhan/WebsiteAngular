@@ -10,8 +10,10 @@
     --text-color: #212529;
     --discount: #ff0000;
     --background: #ff8800bd;
-    --navbackground: #ff8800;
+    --navbackground: #FF9240;
     --white: #fff;
+    --shadow: orangered;
+    --border: #ced4da;
 }
 
 * {
@@ -26,8 +28,8 @@ html{
         1rem = 10px;
         1.6rem = 16px;
     */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 
 a {
@@ -110,9 +112,15 @@ p{
     padding: 1rem 5rem;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+input{
+    margin: .2rem 0;
+}
 
+input:focus { 
+    outline: none !important;
+    border-color: var(--primary);
+    box-shadow: 0 0 .5rem var(--hoverprimary);
+}
 [class *= "col__"]{
     width: 100%;
 }

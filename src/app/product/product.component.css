@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.card__item, .card__detail{
+    width: 100%;
+}
+
 .card__item{
     display: flex;
     flex-direction:column;

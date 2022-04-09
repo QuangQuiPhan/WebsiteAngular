@@ -11,7 +11,10 @@ import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
 	{
 		path: '',
-		component: HomeComponent
+		component: HomeComponent,
+		data:{
+			pageTitle: "Trang chủ"
+		}
 	},
 	{
 		path: 'GioiThieu',

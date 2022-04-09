@@ -17,6 +17,7 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     ProductComponent,
     SigninComponent,
     SignupComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

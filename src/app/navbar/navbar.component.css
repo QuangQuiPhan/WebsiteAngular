@@ -1,0 +1,51 @@
+ul{
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__category, .navbar__price{
+    border: .1rem solid var(--border);
+    border-radius: 0.4rem;
+    margin: 0.3rem 0rem;
+    padding: 2rem 1.7rem;
+    text-align: center;
+    background-color: var(--background);
+}
+
+.navbar__category li, .navbar__price li{
+    border: .1rem solid var(--border);
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.4rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.navbar__category li:hover, .navbar__price li:hover{
+    background-color: var(--hoverwarning);
+    font-weight: 500;
+    animation: 2s linear hover;
+}
+
+.title{
+    background: var(--background);
+    border-radius: 0.3rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+@keyframes hover {
+    from{
+        background: var(--background);
+        color: var(--white);
+        opacity: 0.4;
+    }to{
+        background: var(--hoverwarning);
+        color: var(--text-color);
+        font-weight: 500;
+        opacity: 1;
+    }
+}

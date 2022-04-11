@@ -18,6 +18,8 @@ import { SignupComponent } from './signup/signup.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     SigninComponent,
     SignupComponent,
     ProductDetailComponent,
-    NavbarComponent
+    NavbarComponent,
+    ShoppingCartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

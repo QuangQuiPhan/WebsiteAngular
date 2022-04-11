@@ -1,0 +1,146 @@
+.content{
+    display: flex;
+    padding: 1.9rem 0;
+    flex-direction: column;
+}
+
+.table{
+    width: 100%;
+}
+
+.table thead{
+    display: flex;
+    padding: 1.5rem 1.4rem;    
+    justify-content:space-around;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    background-color: var(--background);
+}
+
+.table thead th:nth-child(1){
+    width: 9rem;
+}
+
+.table thead th:nth-child(2){
+    width: 22rem;
+}
+
+.table thead th:nth-child(3){
+    width: 10rem;
+}
+
+.table thead th:nth-child(4){
+    width: 10rem;
+}
+
+.table thead th:nth-child(5){
+    width: 10rem;
+}
+
+.table thead th:nth-child(6){
+    width: 19rem;
+}
+
+.table tbody tr{
+    display: flex;
+    padding: 1.4rem 0.7rem;
+    justify-content:space-around;
+    border-bottom: 0.2rem solid var(--shadow);
+    /* border-left: 0.2rem solid var(--shadow);
+    border-right: 0.2rem solid var(--shadow); */
+}
+
+.table tbody tr td:nth-child(1){
+    width: 9rem;
+}
+
+.table tbody tr td:nth-child(2){
+    width: 22rem;
+}
+
+.table tbody tr td:nth-child(3){
+    width: 10rem;
+}
+
+.table tbody tr td:nth-child(4){
+    width: 10rem;
+}
+
+.table tbody tr td:nth-child(5){
+    width: 10rem;
+}
+
+.table tbody tr td:nth-child(6){
+    width: 19rem;
+}
+
+.table tbody tr td img{
+    width: 100%;
+}
+
+.table tbody tr td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table{
+    width: 50%;
+}
+
+#table thead{
+    display: flex;
+    padding: 1.5rem 1.4rem;    
+    justify-content:space-around;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    background-color: var(--navbackground);
+}
+
+#table thead th:nth-child(1){
+    width: 15rem;
+}
+
+#table thead th:nth-child(2){
+    width: 22rem;
+}
+
+#table tbody tr{
+    display: flex;
+    padding: 1.4rem 0.7rem;
+    justify-content:space-around;
+    border-bottom: 0.2rem solid var(--shadow);
+    border-left: 0.2rem solid var(--shadow);
+    border-right: 0.2rem solid var(--shadow);
+    border-radius: 0.2rem;
+}
+
+#table tbody tr td:nth-child(1){
+    width: 15rem;
+}
+
+#table tbody tr td:nth-child(2){
+    width: 22rem;
+}
+
+#table tbody tr td:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.control{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.control__checkout{
+    display: flex;
+    flex-direction: column;
+}
+
+.control__checkout a{
+    margin-top: 2.5rem;
+}

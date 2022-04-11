@@ -7,6 +7,8 @@ import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
 	{
@@ -43,6 +45,14 @@ const routes: Routes = [
 	{
 		path: 'ChiTiet',
 		redirectTo: '/ChiTiet'
+	},
+	{
+		path: 'GioHang',
+		component: ShoppingCartComponent
+	},
+	{
+		path: 'DatHang',
+		component: CheckoutComponent
 	}
 ];
 

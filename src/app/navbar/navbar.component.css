@@ -25,8 +25,9 @@ ul{
 }
 
 .navbar__category li:hover, .navbar__price li:hover{
-    background-color: var(--hoverwarning);
+    background-color: var(--shadow);
     font-weight: 500;
+    border: .1rem solid var(--shadow);
     animation: 2s linear hover;
 }
 
@@ -43,7 +44,7 @@ ul{
         color: var(--white);
         opacity: 0.4;
     }to{
-        background: var(--hoverwarning);
+        background: var(--shadow);
         color: var(--text-color);
         font-weight: 500;
         opacity: 1;

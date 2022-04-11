@@ -1,4 +1,4 @@
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,22 +6,28 @@
     box-sizing: border-box;
 }
 
-.nav--background{
+.nav--background {
     background: var(--background);
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     list-style: none;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.navbar__item{
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar__item {
     padding: 0.5rem 1.2rem;
 }
 
-.navbar__item__link{
+.navbar__item__link {
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 0.08rem;
@@ -35,18 +41,109 @@
     animation: 1s linear identifier;
 }
 
+.shoppingcart {
+    width: 45%;
+    top: 4.7rem;
+    left: 52%;
+    z-index: 10000;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    padding: 1.2rem 1.4rem;
+    background-color: var(--navbackground);
+}
+
+.shoppingcart__item {
+    width: 100%;
+    display: flex;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    border: 0.1rem solid var(--shadow);
+}
+
+.shoppingcart__item__image {
+    width: 16.33%;
+    padding: 1.3rem;
+}
+
+.shoppingcart__item__remove{
+    width: 3.66%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.shoppingcart__item__remove h3{
+    cursor: pointer;
+    color: var(--shadow);
+}
+
+.shoppingcart__item__content {
+    display: flex;
+    width: 80%;
+    padding: 1.3rem 1.5rem;
+    flex-direction: column;
+}
+
+.shoppingcart__item__image img {
+    width: 100%;
+}
+
+.shoppingcart__item__content__price {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.shoppingcart__item__content__name h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.shoppingcart__total {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shoppingcart__total h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--shadow);
+    margin: 0.6rem;
+}
+
+#cart:hover .shoppingcart {
+    display: flex;
+    animation: 1s ease-in-out cart;
+}
+
 @keyframes identifier {
-    from{
+    from {
         color: var(--white);
         font-weight: 500;
         opacity: 0.5;
-    }to{
+    }
+
+    to {
         color: var(--danger);
         font-weight: 800;
         opacity: 1;
     }
 }
 
-mat-icon{
-    font-size:2rem;
+@keyframes cart {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+mat-icon {
+    font-size: 2rem;
 }

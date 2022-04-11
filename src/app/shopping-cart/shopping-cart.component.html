@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="content">
+        <div class="title">
+            <h3>Chào mừng bạn trở lại trang giỏ hàng</h3>
+        </div>
+
+        <table class="table">
+            <thead>
+                <th>Hình đại diện</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Thành tiền</th>
+                <th></th>
+            </thead>
+            <tbody id="listitem">
+                <tr>
+                    <td>
+                        <input type="hidden" name="id" value="1">
+                        <img src="assets/imgs/1.png" alt="Ảnh minh họa bánh kem dâu">
+                    </td>
+                    <td>Bánh kem dâu</td>
+                    <td>1</td>
+                    <td>$300</td>
+                    <td>$300</td>
+                    <td>
+                        <a href="" class="btn"><mat-icon color="primary">edit</mat-icon></a>|
+                        <a onclick="remove()" class="btn"><mat-icon style="color:red;">delete</mat-icon></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="hidden" name="id" value="1">
+                        <img src="assets/imgs/2.png" alt="Ảnh bánh kem socola">
+                    </td>
+                    <td>Bánh kem socola</td>
+                    <td>2</td>
+                    <td>$100</td>
+                    <td>$200</td>
+                    <td>
+                        <a href="" class="btn"><mat-icon color="primary">edit</mat-icon></a>|
+                        <a onclick="remove()" class="btn"><mat-icon style="color:red;">delete</mat-icon></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="control">
+            <div class="control__back">
+                <a href="SanPham" class="btn btn--primary">Mua tiếp</a>
+            </div>
+            <div class="control__checkout">
+                <table id="table">
+                    <thead>
+                        <th>Thanh toán đơn hàng</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Số lượng sản phẩm</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền</td>
+                            <td>$500</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="DatHang" class="btn btn--danger">Đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+</div>

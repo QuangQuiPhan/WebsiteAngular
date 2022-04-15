@@ -3,6 +3,8 @@ export interface ProductsModules {
     title: string;
     description: string;
     price: number;
+    quality: 1;
     avatar?: string;
     alt: string;
+    category: number;
 }

@@ -52,3 +52,7 @@ span{
     font-size: 2rem;
     color: var(--white);
 }
+
+.required{
+    color: var(--danger);
+}

@@ -15,44 +15,53 @@ const routes: Routes = [
 		path: '',
 		component: HomeComponent,
 		data:{
-			pageTitle: "Trang chủ"
+			title: "Trang chủ"
 		}
 	},
 	{
 		path: 'GioiThieu',
-		component: AboutUsComponent
+		component: AboutUsComponent,
+		data: { title: "Giới thiệu"}
 	},
 	{
 		path: 'LienHe',
-		component: ContactComponent
+		component: ContactComponent,
+		data: { title: "Liên hệ"}
 	},
 	{
 		path: 'SanPham',
-		component: ProductComponent
+		component: ProductComponent,
+		data: { title: "Sản phẩm"}
 	},
 	{
 		path: 'DangNhap',
-		component: SigninComponent
+		component: SigninComponent,
+		data: { title: "Đăng nhập"}
 	},
 	{
 		path: 'DangKy',
-		component: SignupComponent
+		component: SignupComponent,
+		data: { title: "Đăng ký"}
+	},
+	{
+		path: 'ChiTiet/:id',
+		component: ProductDetailComponent,
+		data: { title: "Chi tiết sản phẩm"}
 	},
 	{
 		path: 'ChiTiet',
-		component: ProductDetailComponent
-	},
-	{
-		path: 'ChiTiet',
-		redirectTo: '/ChiTiet'
+		redirectTo: '/ChiTiet/:id',
+		data: { title: "Chi tiết sản phẩm"}
 	},
 	{
 		path: 'GioHang',
-		component: ShoppingCartComponent
+		component: ShoppingCartComponent,
+		data: { title: "Giỏ hàng"}
 	},
 	{
 		path: 'DatHang',
-		component: CheckoutComponent
+		component: CheckoutComponent,
+		data: { title: "Đặt hàng"}
 	}
 ];
 

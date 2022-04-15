@@ -103,7 +103,6 @@
 }
 
 .shoppingcart__total {
-    margin-top: 4rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,6 +114,12 @@
     font-weight: 400;
     color: var(--shadow);
     margin: 0.6rem;
+}
+
+.shoppingcart >a {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 #cart:hover .shoppingcart {

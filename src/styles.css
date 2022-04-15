@@ -1,9 +1,9 @@
 :root {
-    --primary : rgba(57, 102, 226, 1);
+    --primary: rgba(57, 102, 226, 1);
     --green: rgba(45, 230, 76, 1);
     --danger: rgba(214, 55, 55, 1);
     --warning: rgba(243, 220, 10, 1);
-    --hoverprimary : rgba(57, 102, 226, 0.75);
+    --hoverprimary: rgba(57, 102, 226, 0.75);
     --hovergreen: rgba(45, 230, 76, 0.75);
     --hoverdanger: rgba(214, 55, 55, 0.75);
     --hoverwarning: rgba(243, 220, 10, 0.75);
@@ -14,7 +14,7 @@
     --white: #fff;
     --shadow: orangered;
     --border: #ced4da;
-    --focus: #539be2
+    --focus: #539be2;
 }
 
 * {
@@ -22,7 +22,7 @@
     padding: 0;
 }
 
-html{
+html {
     font-size: 62.5%;
     /* 
         62.5% = 10px
@@ -30,7 +30,7 @@ html{
         1.6rem = 16px;
     */
     color: var(--text-color);
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     background-color: var(--border);
 }
 
@@ -40,24 +40,24 @@ a {
     font-size: 1.3rem;
 }
 
-h1{
+h1 {
     font-size: 1.9rem;
 }
 
-h2{
+h2 {
     font-size: 1.8rem;
 }
 
-h3{
+h3 {
     font-size: 1.7rem;
 }
 
-h4{
+h4 {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-p{
+p {
     font-size: 1.3rem;
 }
 
@@ -71,112 +71,166 @@ p{
     text-align: center;
 }
 
-.btn--primary{
+.btn--primary {
     background: var(--primary);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.btn--primary:hover{
+.btn--primary:hover {
     background: var(--hoverprimary);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.btn--green{
+.btn--green {
     background: var(--green);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.btn--green:hover{
+.btn--green:hover {
     background: var(--hovergreen);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.btn--danger{
+.btn--danger {
     background: var(--danger);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.btn--danger:hover{
+.btn--danger:hover {
     background: var(--hoverdanger);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.btn--warning{
+.btn--warning {
     background: var(--warning);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.btn--warning:hover{
+.btn--warning:hover {
     background: var(--hoverwarning);
-    color: var(--white); 
+    color: var(--white);
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.container{
+.container {
     padding: 1rem 5rem;
 }
 
-input{
+input {
     margin: .2rem 0;
     font-weight: 500;
 }
 
-input:focus, textarea:focus { 
+input:focus,
+textarea:focus {
     outline: none !important;
     border-color: var(--focus);
     box-shadow: 0 0 .5rem var(--focus);
 }
-[class *= "col__"]{
-    width: 100%;
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-style: italic;
 }
 
-@media screen and (min-width: 680px){
-    .col__2{
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    font-style: italic;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    font-style: italic;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    font-style: italic;
+}
+
+textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-style: italic;
+}
+
+textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    font-style: italic;
+}
+
+textarea:-ms-input-placeholder {
+    /* IE 10+ */
+    font-style: italic;
+}
+
+textarea:-moz-placeholder {
+    /* Firefox 18- */
+    font-style: italic;
+}
+
+[class *="col__"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 680px) {
+    .col__2 {
         width: 16.33%;
+        box-sizing: border-box;
     }
-    
-    .col__3{
+
+    .col__3 {
         width: 25%;
+        box-sizing: border-box;
     }
-    
-    .col__4{
+
+    .col__4 {
         width: 33.33%;
+        box-sizing: border-box;
     }
-    
-    .col__5{
+
+    .col__5 {
         width: 41.66%;
+        box-sizing: border-box;
     }
-    
-    .col__6{
+
+    .col__6 {
         width: 50%;
+        box-sizing: border-box;
     }
-    
-    .col__7{
+
+    .col__7 {
         width: 58.33%;
+        box-sizing: border-box;
     }
-    
-    .col__8{
+
+    .col__8 {
         width: 66.66%;
+        box-sizing: border-box;
     }
-    
-    .col__9{
+
+    .col__9 {
         width: 75%;
+        box-sizing: border-box;
     }
-    
-    .col__10{
+
+    .col__10 {
         width: 83.33%;
+        box-sizing: border-box;
     }
-    
-    .col__11{
+
+    .col__11 {
         width: 91.66%;
+        box-sizing: border-box;
     }
-    
-    .col__12{
+
+    .col__12 {
         width: 100%;
+        box-sizing: border-box;
     }
 }

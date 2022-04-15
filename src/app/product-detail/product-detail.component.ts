@@ -1,14 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProductsModules } from '../products-modules';
+import { Data } from '../data-modules';
+import { data } from 'jquery';
 
-export interface isProduct{
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  quality: number;
-  avatar: string;
-  alt: string;
-}
 
 @Component({
   selector: 'app-product-detail',
@@ -17,7 +11,12 @@ export interface isProduct{
 })
 
 export class ProductDetailComponent implements OnInit {
-  Detail: isProduct = {
+
+  @Input() product?: ProductsModules;
+  
+  detail = Data;
+
+  Detail = {
     id: 1,
     title: "Bánh kem dâu",
     description: "Bánh kem có vị dâu",

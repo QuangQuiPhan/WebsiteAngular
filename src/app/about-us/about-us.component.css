@@ -1,0 +1,27 @@
+.content{
+    padding: 3rem;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.about p{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.auth .col__6{
+    margin: 1rem auto;
+    display: flex;
+    padding: 1.7rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth .col__6 img{
+    width: 50%;
+}

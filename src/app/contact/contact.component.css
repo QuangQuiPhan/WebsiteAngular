@@ -1,0 +1,41 @@
+.sendemail, .ggmap{
+    display: flex;
+    padding: 2rem;
+    flex-direction:column;
+    box-sizing: border-box;
+}
+
+.form{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.7rem 3rem; 
+}
+
+.form__group{
+    display: flex;
+    padding: 0.6rem 0;
+    flex-direction: column;
+}
+
+.form__group input,
+.form__group textarea{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 0.3;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--focus);
+}
+
+.form__control button{
+    line-height: 1.8;
+    display: flex;
+}
+
+.form__control button mat-icon{
+    margin-left: 0.4rem;
+}
+
+.ggmap iframe{
+    width: 100%;
+}

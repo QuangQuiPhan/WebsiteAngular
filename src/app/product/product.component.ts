@@ -1,14 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Data } from '../data-modules';
+import { ProductsModules } from '../products-modules';
 
-export interface isProduct{
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  avatar: string;
-  alt: string;
-}
 
 @Component({
   
@@ -18,10 +11,13 @@ export interface isProduct{
 })
 export class ProductComponent implements OnInit {
 
-  title = "Sản phẩm";
   constructor() { }
   products = Data;
 
+  selectProduct?: ProductsModules;
+  onSelect(product: ProductsModules):void{
+    this.selectProduct = product;
+  }
   ngOnInit(): void {
   }
 

@@ -15,6 +15,7 @@
     --shadow: orangered;
     --border: #ced4da;
     --focus: #539be2;
+    --body: #edf1f5;
 }
 
 * {
@@ -31,7 +32,7 @@ html {
     */
     color: var(--text-color);
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: var(--border);
+    background-color: var(--body);
 }
 
 a {

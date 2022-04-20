@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Slide } from '../data-modules';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,32 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  slides = Slide;
   ngOnInit(): void {
   }
 
+  homeOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: ['<', '>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: true
+  }
 }

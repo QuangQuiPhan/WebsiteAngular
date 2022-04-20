@@ -20,7 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    CarouselModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

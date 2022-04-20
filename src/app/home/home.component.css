@@ -1,0 +1,31 @@
+#carousel{
+    width: 75%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+hr{
+    border: .1rem solid var(--border);
+}
+
+#carousel img{
+    height: 90vh;
+}
+
+.ship{
+    margin: 2rem 0;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ship__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

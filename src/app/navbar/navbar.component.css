@@ -28,7 +28,7 @@ ul{
     background-color: var(--shadow);
     font-weight: 500;
     border: .1rem solid var(--shadow);
-    animation: 2s linear hover;
+    animation: 0.6s linear hover;
 }
 
 .title{

@@ -1,3 +1,11 @@
+.logo__item {
+    padding-top: 60px;
+    padding-right: 262px;
+}
+
+.logo__item a img {
+    width: 100px;
+}
 .nav {
     display: flex;
     flex-direction: row;
@@ -9,7 +17,9 @@
 .nav--background {
     background: var(--background);
 }
-
+.nav--body {
+    background: var(--body);
+}
 .navbar ul {
     display: flex;
     flex-direction: row;
@@ -34,11 +44,17 @@
     line-height: 1.832;
     color: var(--white);
 }
-
+.navbar__item__links {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    line-height: 1.832;
+    color: var(--black);
+}
 .navbar__item__link:hover {
     background: rgba(var(--background), 0.5);
     color: var(--danger);
-    animation: 1s linear identifier;
+    /* animation: 1s linear identifier; */
 }
 
 .shoppingcart {
@@ -124,7 +140,7 @@
 
 #cart:hover .shoppingcart {
     display: flex;
-    animation: 1s ease-in-out cart;
+    animation: 0.5s ease-in-out cart;
 }
 
 @keyframes identifier {

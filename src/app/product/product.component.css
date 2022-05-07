@@ -104,7 +104,7 @@
 
 .card:hover .card__detail{
     display: flex;
-    animation: 1s ease-in identifier;
+    animation: 0.9s ease-in identifier;
 }
 
 @keyframes identifier {

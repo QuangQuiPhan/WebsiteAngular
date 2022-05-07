@@ -1,15 +1,119 @@
-.footer{
-    display: flex;
-    flex-direction:column;
-    justify-content:flex-start;
+
+ .footer {
     background-color: var(--background);
-    padding: 1.2rem 0rem;
+     box-sizing: border-box;
+     width: 100%;
+     text-align: left;
+     font: bold 16px sans-serif;
+     padding: 50px 50px 60px 50px;
+     margin-top: 80px;
+ }
+
+.footer__left,
+.footer__center,
+.footer__right {
+     display: inline-block;
+     vertical-align: top;
+ }
+
+ /* Footer left */
+
+.footer__left {
+     width: 40%;
+ }
+
+ .footer h3 {
+     color: #ffffff;
+     font: normal 36px 'Cookie', cursive;
+     margin: 0;
+ }
+
+
+
+.footer__links {
+     color: #ffffff;
+     margin: 20px 0 12px;
+ }
+
+.footer__links a {
+     display: inline-block;
+     line-height: 1.8;
+     text-decoration: none;
+     color: inherit;
+ }
+
+.footer__name {
+    color: var(--text-color);
+     font-size: 14px;
+     font-weight: normal;
+     margin: 0;
+ }
+
+ /* Footer Center */
+
+.footer__center {
+     width: 30%;
+ }
+
+.footer__center p {
+     display: inline-block;
+     color: var(--white);
+     vertical-align: middle;
+     margin: 0;
+ }
+
+.footer__center p span {
+     display: block;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 2;
+ }
+
+.footer__center p a {
+    color: var(--text-color);
+     text-decoration: none;
+     ;
+ }
+
+ /* Footer Right */
+
+.footer__right {
+     width: 30%;
+ }
+
+.footer__about {
+     line-height: 20px;
+     color: var(--text-color);
+     font-size: 13px;
+     font-weight: normal;
+     margin: 0;
+ }
+
+.footer__about span {
+     display: block;
+     color: #ffffff;
+     font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+
+
+.footer__left img {
+    width: 80px;
 }
 
-.footer__info{
-    padding: 1.5rem 3rem;
-}
+ @media (max-width: 880px) {
 
-.footer__info p{
-    font-size: 1.3rem;
-}
+     .footer__left,
+     .footer__center,
+     .footer__right {
+         display: block;
+         width: 100%;
+         margin-bottom: 40px;
+         text-align: center;
+     }
+
+     .footer__center i {
+         margin-left: 0;
+     }
+ }

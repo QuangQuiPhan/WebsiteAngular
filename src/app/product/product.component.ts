@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Data } from '../data-modules';
+import { GetDataService } from '../get-data.service';
 import { ProductsModules } from '../products-modules';
 
 
@@ -10,15 +10,14 @@ import { ProductsModules } from '../products-modules';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+  products: ProductsModules[] = [];
+  constructor(private getDataService: GetDataService) { }
 
-  constructor() { }
-  products = Data;
-
-  selectProduct?: ProductsModules;
-  onSelect(product: ProductsModules):void{
-    this.selectProduct = product;
-  }
   ngOnInit(): void {
+    this.getProducts();
   }
 
+  getProducts(){
+    this.getDataService.getProducts().subscribe(p => this.products = p);
+  }
 }

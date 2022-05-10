@@ -22,6 +22,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { OwlModule } from 'ngx-owl-carousel';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     ProductDetailComponent,
     NavbarComponent,
     ShoppingCartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { CategoryComponent } from './category/category.component';
+import { data } from 'jquery';
 
 const routes: Routes = [
 	{
@@ -49,11 +51,6 @@ const routes: Routes = [
 		data: { title: "Chi tiết sản phẩm"}
 	},
 	{
-		path: 'ChiTiet',
-		redirectTo: '/ChiTiet/:id',
-		data: { title: "Chi tiết sản phẩm"}
-	},
-	{
 		path: 'GioHang',
 		component: ShoppingCartComponent,
 		data: { title: "Giỏ hàng"}
@@ -62,6 +59,11 @@ const routes: Routes = [
 		path: 'DatHang',
 		component: CheckoutComponent,
 		data: { title: "Đặt hàng"}
+	},
+	{
+		path: 'LoaiBanh/:id',
+		component: CategoryComponent,
+		data: { title: "Loại bánh" }
 	}
 ];
 

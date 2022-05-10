@@ -1,30 +1,30 @@
 <div class="container">
-    <div class="row" *ngIf="Detail">
+    <div class="row" *ngIf="detail">
         <div class="col__4">
             <div class="img">
-                <img src="{{Detail.avatar}}" alt="{{Detail.alt}}">
+                <img [src]="detail.avatar" alt="{{detail.alt}}">
             </div>
         </div>
         <div class="col__8">
             <div class="content">
-                <input type="hidden" name="id" id="{{Detail.id}}">
+                <input type="hidden" name="id" id="{{detail.id}}">
                 <div class="content__title">
-                    <h2>{{Detail.title}}</h2>
+                    <h2>{{detail.title}}</h2>
                 </div>
                 <div class="content__description">
-                    <p>{{Detail.description}}</p>
+                    <p>{{detail.description}}</p>
                 </div>
                 <div class="content__price">
-                    <p>${{Detail.price}}</p>
+                    <p>${{detail.price}}</p>
                 </div>
                 <div class="content__quality">
-                    <button class="btn" (click)="des()">-</button>
-                    <input type="number" name="quality" value="{{Detail.quality}}">
-                    <button class="btn" (click)="inc()">+</button>
+                    <button class="btn" >-</button>
+                    <input type="number" name="quality" value="{{detail.quantity}}">
+                    <button class="btn" >+</button>
                 </div>
                 <div class="content__addcart">
                     <a href="SanPham" class="btn btn--primary">Trở về</a>
-                    <a href="#" class="btn btn--danger">Mua</a>
+                    <a (click)="addToCart(detail)" class="btn btn--danger">Mua</a>
                 </div>
             </div>
         </div>

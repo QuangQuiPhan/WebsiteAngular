@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProductsModules } from '../products-modules';
-import { Data } from '../data-modules';
-import { data } from 'jquery';
+import { ProductsModules } from '../product.model';
+import { ProductServiceService } from '../product-service.service';
+import { ActivatedRoute } from '@angular/router';
+import { ShoppingCartService } from '../shopping-cart.service';
 
 
 @Component({
@@ -11,36 +12,17 @@ import { data } from 'jquery';
 })
 
 export class ProductDetailComponent implements OnInit {
-
-  @Input() product?: ProductsModules;
-  
-  detail = Data;
-
-  Detail = {
-    id: 1,
-    title: "Bánh kem dâu",
-    description: "Bánh kem có vị dâu",
-    price: 300,
-    quality: 1,
-    avatar: 'assets/imgs/1.png', 
-    alt: "Ảnh bánh kem dâu"
-  }
-  constructor() { }
-  inc(){
-    this.Detail.price = 300;
-    this.Detail.quality += 1;
-    this.Detail.price = this.Detail.quality * this.Detail.price;
-  }
-
-  // @Input this.Detail.quality! number
-
-  des(){
-    this.Detail.price = 300;
-    this.Detail.quality -= 1;
-    this.Detail.price = this.Detail.quality * this.Detail.price;
-  }
+  detail: ProductsModules|undefined;
+  constructor(private productService:ProductServiceService, private route:ActivatedRoute, private cartService: ShoppingCartService) { }
 
   ngOnInit(): void {
+    const id = +this.route.snapshot.params['id'];
+    this.detail = this.productService.getProduct(id);
+  }
+
+  addToCart(product: ProductsModules){
+    this.cartService.addItem(product);
+    window.alert("Thêm vào giỏ hàng thành công!!!");
   }
 
 }

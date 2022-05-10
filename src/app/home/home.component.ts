@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Slide } from '../data-modules';
+import { ProductServiceService } from '../product-service.service';
+import { ProductsModules } from '../product.model';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,11 @@ import { Slide } from '../data-modules';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private productService: ProductServiceService) { }
 
-  slides = Slide;
+  slides:ProductsModules[] = [];
   ngOnInit(): void {
+    this.slides = this.productService.getProducts();
   }
 
   homeOptions: OwlOptions = {

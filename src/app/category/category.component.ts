@@ -4,20 +4,18 @@ import { ProductServiceService } from '../product-service.service';
 import { ProductsModules } from '../product.model';
 import { ShoppingCartService } from '../shopping-cart.service';
 
-
 @Component({
-  
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  selector: 'app-category',
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.css']
 })
-export class ProductComponent implements OnInit {
-
+export class CategoryComponent implements OnInit {
   products: ProductsModules[] = [];
   constructor(private productService: ProductServiceService, private route:ActivatedRoute, private cartService: ShoppingCartService) { }
 
   ngOnInit(): void {
-    this.products = this.productService.getProducts();
+    const id = +this.route.snapshot.params['id'];
+    this.products = this.productService.getProductsByCategory(id);
   }
 
   addToCart(product: ProductsModules){

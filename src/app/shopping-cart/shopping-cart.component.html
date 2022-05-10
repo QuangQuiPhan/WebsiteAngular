@@ -14,29 +14,15 @@
                 <th></th>
             </thead>
             <tbody id="listitem">
-                <tr>
+                <tr *ngFor="let i of Items">
                     <td>
-                        <input type="hidden" name="id" value="1">
-                        <img src="assets/imgs/1.png" alt="Ảnh minh họa bánh kem dâu">
+                        <input type="hidden" name="id" value="{{ i.id }}">
+                        <img src="{{ i.avatar }}" alt="{{ i.alt }}">
                     </td>
-                    <td>Bánh kem dâu</td>
-                    <td>1</td>
-                    <td>$300</td>
-                    <td>$300</td>
-                    <td>
-                        <a href="" class="btn"><mat-icon color="primary">edit</mat-icon></a>|
-                        <a class="btn"><mat-icon style="color:red;">delete</mat-icon></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="hidden" name="id" value="1">
-                        <img src="assets/imgs/2.png" alt="Ảnh bánh kem socola">
-                    </td>
-                    <td>Bánh kem socola</td>
-                    <td>2</td>
-                    <td>$100</td>
-                    <td>$200</td>
+                    <td>{{ i.title }}</td>
+                    <td>{{ i.quantity }}</td>
+                    <td>$ {{ i.price }}</td>
+                    <td>$ {{ i.price }}</td>
                     <td>
                         <a href="" class="btn"><mat-icon color="primary">edit</mat-icon></a>|
                         <a class="btn"><mat-icon style="color:red;">delete</mat-icon></a>

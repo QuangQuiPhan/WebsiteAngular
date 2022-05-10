@@ -2,9 +2,9 @@
   <div class="navbar__category">
     <h3 class="title">Loại bánh</h3>
     <ul>
-      <li class="navbar__category__item">Bánh Kem Tous Les Jours</li>
-      <li class="navbar__category__item">Bánh Kem Brodard</li>
-      <li class="navbar__category__item">Bánh ngọt</li>
+      <li class="navbar__category__item" *ngFor="let c of categories">
+        <a routerLink="/LoaiBanh/{{ c.id }}">{{ c.categoryName }}</a>
+      </li>
     </ul>
   </div>
   <div class="navbar__price">

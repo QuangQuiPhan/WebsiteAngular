@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+      <div class="col__3">
+        <app-navbar></app-navbar>
+      </div>
+      <div class="col__9">
+        <div class="row">
+          <div class="col__4" *ngFor="let product of products">
+            <div class="card">
+              <input type="hidden" name="id" id="{{ product.id }}" />
+              <div class="card__item">
+                <div class="card__item__image">
+                  <img src="{{ product.avatar }}" alt="{{ product.alt }}" />
+                </div>
+                <div class="card__item__content">
+                  <div class="card__item__content__name">
+                    <h3>
+                      {{ product.title }}
+                    </h3>
+                  </div>
+                  <div class="card__item__content__price">
+                    <p>${{ product.price }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__detail">
+                <div class="card__detail__description">
+                  <p>{{ product.description }}</p>
+                </div>
+                <div class="card__detail__price">
+                  <h3>${{ product.price }}</h3>
+                </div>
+                <div class="card__detail__cart">
+                  <a (click)="addToCart(product)" class="btn btn--danger">Mua</a>
+                  <a
+                    href="ChiTiet/{{ product.id }}"
+                    class="btn btn--primary"
+                    >Chi tiết</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -13,58 +13,58 @@ import { CategoryComponent } from './category/category.component';
 import { data } from 'jquery';
 
 const routes: Routes = [
-	{
-		path: '',
-		component: HomeComponent,
-		data:{
-			title: "Trang chủ"
-		}
-	},
-	{
-		path: 'GioiThieu',
-		component: AboutUsComponent,
-		data: { title: "Giới thiệu"}
-	},
-	{
-		path: 'LienHe',
-		component: ContactComponent,
-		data: { title: "Liên hệ"}
-	},
-	{
-		path: 'SanPham',
-		component: ProductComponent,
-		data: { title: "Sản phẩm"}
-	},
-	{
-		path: 'DangNhap',
-		component: SigninComponent,
-		data: { title: "Đăng nhập"}
-	},
-	{
-		path: 'DangKy',
-		component: SignupComponent,
-		data: { title: "Đăng ký"}
-	},
-	{
-		path: 'ChiTiet/:id',
-		component: ProductDetailComponent,
-		data: { title: "Chi tiết sản phẩm"}
-	},
-	{
-		path: 'GioHang',
-		component: ShoppingCartComponent,
-		data: { title: "Giỏ hàng"}
-	},
-	{
-		path: 'DatHang',
-		component: CheckoutComponent,
-		data: { title: "Đặt hàng"}
-	},
-	{
-		path: 'LoaiBanh/:id',
-		component: CategoryComponent,
-		data: { title: "Loại bánh" }
-	}
+  {
+    path: '',
+    component: HomeComponent,
+    data: {
+      title: 'Trang chủ',
+    },
+  },
+  {
+    path: 'GioiThieu',
+    component: AboutUsComponent,
+    data: { title: 'Giới thiệu' },
+  },
+  {
+    path: 'LienHe',
+    component: ContactComponent,
+    data: { title: 'Liên hệ' },
+  },
+  {
+    path: 'SanPham',
+    component: ProductComponent,
+    data: { title: 'Sản phẩm' },
+  },
+  {
+    path: 'DangNhap',
+    component: SigninComponent,
+    data: { title: 'Đăng nhập' },
+  },
+  {
+    path: 'DangKy',
+    component: SignupComponent,
+    data: { title: 'Đăng ký' },
+  },
+  {
+    path: 'ChiTiet/:id',
+    component: ProductDetailComponent,
+    data: { title: 'Chi tiết sản phẩm' },
+  },
+  {
+    path: 'GioHang',
+    component: ShoppingCartComponent,
+    data: { title: 'Giỏ hàng' },
+  },
+  {
+    path: 'DatHang',
+    component: CheckoutComponent,
+    data: { title: 'Đặt hàng' },
+  },
+  {
+    path: 'LoaiBanh/:id',
+    component: CategoryComponent,
+    data: { title: 'Loại bánh' },
+  },
 ];
 
 @NgModule({

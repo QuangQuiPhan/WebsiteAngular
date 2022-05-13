@@ -27,18 +27,18 @@ export class ProductServiceService {
     new ProductsModules(19, 'Bánh kem Awesome fruit time fresh 4', 'Lớp bánh bông lan xốp mềm, phần kem tươi beo béo, kết hợp với vị trái cây chua ngọt thanh nhẹ làm nên món bánh kem vô cùng hấp dẫn! Chiếc bánh kem này thực sự là món quà tuyệt vời và phù hợp để dành tặng cho các dịp chúc mừng. Hi vọng chiếc bánh kem này sẽ làm tăng hương vị ngọt ngào cho cuộc sống của bạn.', 720, 1, 'assets/imgs/18_Bánh kem Tous les Jours - Awesome fruit time fresh 4.jpg', 'Ảnh bánh kem Awesome fruit time fresh 4', 1),
     new ProductsModules(20, 'Bánh kem Mocha Square 2', 'Lớp bánh bông lan xốp mềm kết hợp với lớp mocha nâu ngọt dịu đã làm nên món bánh kem vô cùng hấp dẫn! Chiếc bánh kem này thực sự là món quà tuyệt vời và phù hợp để dành tặng cho các dịp chúc mừng. Hi vọng chiếc bánh kem Mocha square 2 này sẽ làm tăng hương vị ngọt ngào cho cuộc sống của bạn.', 720, 1, 'assets/imgs/19_Bánh kem Tous les Jours - Mocha Square 2.jpg', 'Ảnh bánh kem Mocha Square 2', 1),
     new ProductsModules(21, 'Bánh kem Windy', 'Được phủ một lớp sốt chanh dây vàng mịn cùng với sự tài hoa của những người thợ làm bánh tạo nên những bông hoa bằng kem thật đẹp và sang trọng. Bánh kem Brodard là một thương hiệu bánh danh tiếng của Sài Gòn với bề dày lịch sử hơn 60 năm. Mẫu bánh có thể được sử dụng trong tất cả các dịp chúc mừng.', 550, 1, 'assets/imgs/20_Bánh kem Brodard - Windy.jpg', 'Ảnh bánh kem Windy', 2),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules(),
-    // new ProductsModules()
+    new ProductsModules(22, 'Bánh kem Bông Tuyết','Được phủ một kem tươi mềm mịn cùng với sự tài hoa của những người thợ làm bánh tạo nên những bông hoa bằng kem thật đẹp và sang trọng. Bánh kem Brodard là một thương hiệu bánh danh tiếng của Sài Gòn với bề dày lịch sử hơn 60 năm. Mẫu bánh có thể được sử dụng trong tất cả các dịp chúc mừng.', 600, 1, 'assets/imgs/21_Bánh kem Brodard - Bông Tuyết.jpg', 'Ảnh bánh kem Bông Tuyết', 2),
+    new ProductsModules(23, 'Bánh kem Tiramisu Pas', 'Được phủ một kem tươi mềm mịn cùng với vị đắng nhẹ của socola và với sự tài hoa của những người thợ làm bánh tạo nên những bông hoa bằng kem thật đẹp và sang trọng. Bánh kem Brodard là một thương hiệu bánh danh tiếng của Sài Gòn với bề dày lịch sử hơn 60 năm. Mẫu bánh có thể được sử dụng trong tất cả các dịp chúc mừng. Lưu ý: Vui lòng đặt trước 24h. Thương hiệu bánh Brodard chỉ có ở Tp Hồ Chí Minh.', 600, 1, 'assets/imgs/22_Bánh kem Brodard - Tiramisu Pas.jpg', 'Ảnh bánh kem Tiramisu Pas', 2),
+    new ProductsModules(24, 'Bánh kem Bánh Bắp', 'Được phủ một kem tươi mềm mịn cùng với sự tài hoa của những người thợ làm bánh tạo nên những bông hoa bằng kem thật đẹp và sang trọng. Bánh kem Brodard là một thương hiệu bánh danh tiếng của Sài Gòn với bề dày lịch sử hơn 60 năm. Mẫu bánh có thể được sử dụng trong tất cả các dịp chúc mừng.', 600, 1, 'assets/imgs/23_Bánh kem Brodard - Bánh Bắp.jpg', 'Ảnh bánh kem Bánh Bắp', 2),
+    new ProductsModules(25, 'Bánh kem Ngọt Ngào', 'Được phủ một kem tươi mềm mịn cùng với sự tài hoa của những người thợ làm bánh tạo nên những bông hoa bằng kem thật đẹp và sang trọng. Bánh kem Brodard là một thương hiệu bánh danh tiếng của Sài Gòn với bề dày lịch sử hơn 60 năm. Mẫu bánh có thể được sử dụng trong tất cả các dịp chúc mừng. Lưu ý: Vui lòng đặt trước 24h. Thương hiệu bánh Brodard chỉ có ở Tp Hồ Chí Minh.', 750, 1, 'assets/imgs/24_Bánh kem Brodard - Ngọt Ngào.jpg', 'Ảnh bánh kem Ngọt Ngào', 2),
+    new ProductsModules(26, 'Bánh kem Tiramisu White', 'Được phủ một kem tươi ngọt ngào cùng hương vị đặc trưng của socola và với sự tài hoa của những người thợ làm bánh tạo nên những bông hoa bằng kem thật đẹp và sang trọng. Bánh kem Brodard là một thương hiệu bánh danh tiếng của Sài Gòn với bề dày lịch sử hơn 60 năm. Mẫu bánh có thể được sử dụng trong tất cả các dịp chúc mừng.', 700, 1, 'assets/imgs/25_Bánh kem Brodard - Tiramisu White.jpg', 'Ảnh bánh kem Tiramisu White', 2),
+    new ProductsModules(27, 'Bánh kem Socola Love', 'Được phủ một kem tươi mềm mịn cùng với sự tài hoa của những người thợ làm bánh tạo nên những bông hoa bằng kem thật đẹp và sang trọng. Bánh kem Brodard là một thương hiệu bánh danh tiếng của Sài Gòn với bề dày lịch sử hơn 60 năm. Mẫu bánh có thể được sử dụng trong tất cả các dịp chúc mừng.', 700, 1, 'assets/imgs/26_Bánh kem Brodard - Socola Love.jpg', 'Ảnh bánh kem Socola Love', 2),
+    new ProductsModules(28, 'Bánh dừa cuốn', 'Bánh có mùi vị của dừa hòa quyện vào, làm tăng kích thích cho món bánh.', 15, 1, 'assets/imgs/27_Bánh dừa cuốn.jpg', 'Ảnh bánh dừa cuốn', 3),
+    new ProductsModules(29, 'Bánh Muffin Vanila', 'Dữ liệu đang được cập nhật...', 15, 1, 'assets/imgs/28_Bánh Muffin Vanila.jpg', 'Ảnh bánh Muffin Vanila', 3),
+    new ProductsModules(30, 'Bánh Chocolate', 'Dữ liệu đang được cập nhật...', 12, 1, 'assets/imgs/29_Bánh Chocolate.jpg', 'Ảnh bánh Chocolate', 3),
+    new ProductsModules(31, 'Bánh đỏ', 'Dữ liệu đang được cập nhật...', 10, 1, 'assets/imgs/30_Bánh đỏ.jpg', 'Ảnh Bánh đỏ', 3),
+    new ProductsModules(32, 'Bánh Donut Socola', 'Dữ liệu đang được cập nhật...', 8, 1, 'assets/imgs/31_Bánh Donut Socola.jpg', 'Ảnh Bánh Donut Socola', 3),
+    new ProductsModules(33, 'Bánh Dừa Xéo', 'Dữ liệu đang được cập nhật...', 10, 1, 'assets/imgs/32_Bánh Dừa Xéo.jpg', 'Ảnh Bánh Dừa Xéo', 3)
   ]
   constructor() { }
 

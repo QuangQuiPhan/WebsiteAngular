@@ -14,23 +14,23 @@
                 <th></th>
             </thead>
             <tbody id="listitem">
-                <tr *ngFor="let i of Items">
+                <tr>
                     <td>
-                        <input type="hidden" name="id" value="{{ i.id }}">
-                        <img src="{{ i.avatar }}" alt="{{ i.alt }}">
+                        <input type="hidden" name="id" value="">
+                        <img src="assets/imgs/1_Bánh kem Tous les Jours - Milk cake.jpg" alt="Ảnh Bánh kem Milk cake">
                     </td>
-                    <td>{{ i.title }}</td>
-                    <td>{{ i.quantity }}</td>
-                    <td>$ {{ i.price }}</td>
-                    <td>$ {{ i.price }}</td>
+                    <td>Bánh kem Milk cake</td>
+                    <td>1</td>
+                    <td>$ 600</td>
+                    <td>$ 600</td>
                     <td>
                         <a href="" class="btn"><mat-icon color="primary">edit</mat-icon></a>|
                         <a class="btn"><mat-icon style="color:red;">delete</mat-icon></a>
                     </td>
                 </tr>
             </tbody>
-        </table>
 
+        </table>
         <div class="control">
             <div class="control__back">
                 <a href="SanPham" class="btn btn--primary">Mua tiếp</a>
@@ -43,11 +43,11 @@
                     <tbody>
                         <tr>
                             <td>Số lượng sản phẩm</td>
-                            <td>3</td>
+                            <td>1</td>
                         </tr>
                         <tr>
                             <td>Tổng tiền</td>
-                            <td>$500</td>
+                            <td>$600</td>
                         </tr>
                     </tbody>
                 </table>

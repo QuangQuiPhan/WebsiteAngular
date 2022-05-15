@@ -1,31 +1,35 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { ProductServiceService } from './product-service.service';
 import { ProductsModules } from './product.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShoppingCartService {
-  cartItems:ProductsModules[] = [];
-  numOfItems = new BehaviorSubject([]);
+  items: ProductsModules[] = [];
+  /* . . . */
 
-  constructor() { }
-
-  addItem(product: ProductsModules){
-    const exists = this.cartItems.find((item)=> {
-      return item.id === product.id
-    });
-
-    if(exists)
-      exists.quantity ++;
+  addToCart(product: any) { 
+    const exists = this.items.find(p => p.id === product.id);
+    if(!exists)
+      this.items.push(product);
     else
-      this.cartItems.push(product);
-      
-      // this.numOfItems.next(this.cartItems);
-    console.log(this.cartItems);
+      exists.quantity ++
+    console.log(this.items);
   }
 
-  getItems(){
-    return this.cartItems;
+  getItems() {
+    return this.items;
+  }
+
+  clearCart() {
+    this.items = [];
+    return this.items;
+  }
+  constructor() { 
+  }
+
+  countItems(){
+    return this.items.length;
   }
 }

@@ -8,11 +8,9 @@ import { ShoppingCartService } from '../shopping-cart.service';
   styleUrls: ['./shopping-cart.component.css']
 })
 export class ShoppingCartComponent implements OnInit {
-  Items:ProductsModules[] = [];
   constructor(private shoppingCart: ShoppingCartService) { }
 
   ngOnInit(): void {
-    this.Items = this.shoppingCart.getItems();
   }
-
+  Items = this.shoppingCart.getItems();
 }

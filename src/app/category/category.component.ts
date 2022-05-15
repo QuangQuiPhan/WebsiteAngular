@@ -24,8 +24,8 @@ export class CategoryComponent implements OnInit {
   reloadCurrentPage() {
     window.location.reload();
   }
-  addToCart(product: ProductsModules) {
-    this.cartService.addItem(product);
+  addToCart(product: any) {
+    this.cartService.addToCart(product);
     window.alert('Thêm vào giỏ hàng thành công!!!');
   }
 }

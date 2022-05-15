@@ -39,7 +39,8 @@ export class ProductServiceService {
     new ProductsModules(31, 'Bánh đỏ', 'Dữ liệu đang được cập nhật...', 10, 1, 'assets/imgs/30_Bánh đỏ.jpg', 'Ảnh Bánh đỏ', 3),
     new ProductsModules(32, 'Bánh Donut Socola', 'Dữ liệu đang được cập nhật...', 8, 1, 'assets/imgs/31_Bánh Donut Socola.jpg', 'Ảnh Bánh Donut Socola', 3),
     new ProductsModules(33, 'Bánh Dừa Xéo', 'Dữ liệu đang được cập nhật...', 10, 1, 'assets/imgs/32_Bánh Dừa Xéo.jpg', 'Ảnh Bánh Dừa Xéo', 3)
-  ]
+  ];
+
   constructor() { }
 
   getProducts(){
@@ -51,7 +52,6 @@ export class ProductServiceService {
   }
 
   getProductsByCategory(id: number){
-    
     return this.products.filter(p => p.category === id);
   }
 }

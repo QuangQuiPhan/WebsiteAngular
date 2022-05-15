@@ -27,4 +27,6 @@ export class NavbarComponent implements OnInit {
     const id = +this.route.snapshot.params['id'];
     this.products = this.productService.getProductsByCategory(id);
   }
+
+  
 }

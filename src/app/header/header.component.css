@@ -1,6 +1,5 @@
 .logo__item {
     padding-top: 60px;
-    padding-right: 262px;
 }
 
 .logo__item a img {
@@ -167,4 +166,23 @@
 
 mat-icon {
     font-size: 2rem;
+    color: aliceblue;
+}
+
+.form__group__control{
+    padding: 0.6rem;
+    border: .2rem solid var(--border);
+    border-radius: .4rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.searchcontrol{
+    display: flex;
+    width: 30%;
+}
+
+.searchcontrol > mat-icon{
+    display: inline-flex;
+    line-height: 1.8;
 }

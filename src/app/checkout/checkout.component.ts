@@ -86,15 +86,15 @@ import { Component, OnInit } from '@angular/core';
           <div class="items">
             <div class="items__item">
               <div class="items__item__image">
-                <img src="assets/imgs/1.png" alt="Ảnh minh họa bánh kem dâu" />
+                <img src="assets/imgs/1_Bánh kem Tous les Jours - Milk cake.jpg" alt="Ảnh Bánh kem Milk cake" />
               </div>
               <div class="items__item__content">
                 <div class="items__item__content__name">
-                  <h4>Bánh kem dâu</h4>
+                  <h4>Bánh kem Milk cake</h4>
                 </div>
                 <div class="items__item__content__price">
                   <p>Số lượng: 1</p>
-                  <p>Thành tiền: $300</p>
+                  <p>Thành tiền: $600</p>
                 </div>
               </div>
               <div class="items__item__remove">
@@ -111,11 +111,11 @@ import { Component, OnInit } from '@angular/core';
               <tbody>
                 <tr>
                   <td>Số lượng sản phẩm</td>
-                  <td>3</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>Tổng tiền</td>
-                  <td>$500</td>
+                  <td>$600</td>
                 </tr>
               </tbody>
             </table>
@@ -129,9 +129,10 @@ import { Component, OnInit } from '@angular/core';
 export class CheckoutComponent implements OnInit {
   constructor() {}
   money: string = "Tiền mặt";
+  message: string = "Đặt hàng thành công";
   ngOnInit(): void {}
 
   formSubmit(): void {
-    alert(this.money);
+    alert(this.message);
   }
 }

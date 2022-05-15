@@ -23,8 +23,8 @@ export class ProductComponent implements OnInit {
     this.products = this.productService.getProducts();
   }
 
-  addToCart(product: ProductsModules) {
-    this.cartService.addItem(product);
+  addToCart(product: any) {
+    this.cartService.addToCart(product);
     window.alert('Thêm vào giỏ hàng thành công!!!');
   }
 }

@@ -12,17 +12,18 @@ import { ShoppingCartService } from '../shopping-cart.service';
 })
 
 export class ProductDetailComponent implements OnInit {
-  detail: ProductsModules|undefined;
+  product: ProductsModules|undefined;
   constructor(private productService:ProductServiceService, private route:ActivatedRoute, private cartService: ShoppingCartService) { }
 
+  i: number = this.cartService.countItems();
   ngOnInit(): void {
     const id = +this.route.snapshot.params['id'];
-    this.detail = this.productService.getProduct(id);
+    this.product = this.productService.getProduct(id);
   }
-
-  addToCart(product: ProductsModules){
-    this.cartService.addItem(product);
-    window.alert("Thêm vào giỏ hàng thành công!!!");
+  
+  addItem(item: any){
+    this.cartService.addToCart(item);
+    window.alert('Thêm vào giỏ hàng thành công!!!');
   }
-
+  
 }

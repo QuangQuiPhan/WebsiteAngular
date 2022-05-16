@@ -15,18 +15,13 @@
                     <p>{{product.description}}</p>
                 </div>
                 <div class="content__price">
-                    <p>${{product.price}}</p>
+                    <p>${{product?.price}}</p>
                 </div>
                 <div class="content__quality">
-                    <button class="btn" >-</button>
-                    <input type="number" name="quality" value="{{product.quantity}}">
-                    <button class="btn" >+</button>
-                </div>
-                <div class="content__addcart">
                     <a href="SanPham" class="btn btn--primary">Trở về</a>
+                    <input type="number" name="quantity" value="{{product?.quantity}}">
                     <a (click)="addItem(product)" class="btn btn--danger">Mua</a>
                 </div>
-                <p>cart ({{ i }})</p>
             </div>
         </div>
     </div>
